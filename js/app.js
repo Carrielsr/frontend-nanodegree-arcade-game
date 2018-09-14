@@ -50,14 +50,14 @@ Player.prototype.update = function() {
             }
     }
 
-     // Did the player reach the water to meet the winning condition?
-    if (player.y < 1) {
+    // Did the player reach the water to meet the winning condition?
+    if (this.y < 1) {
         allEnemies = [];
         gemOne.render();
     }
          // After the game is won, and the gem has appeared, reset and restart the game
         if (gemOne.x > 500) {
-            window.location.reload(true);
+            window.location.reload();
         }
 };
 
@@ -143,4 +143,3 @@ document.addEventListener('keyup', function(e) {
 
     player.handleInput(allowedKeys[e.keyCode]);
 });
-
