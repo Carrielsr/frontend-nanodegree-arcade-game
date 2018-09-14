@@ -57,7 +57,7 @@ Player.prototype.update = function() {
     }
          // After the game is won, and the gem has appeared, reset and restart the game
         if (gemOne.x > 500) {
-            window.location.reload();
+            window.location.reload(true);
         }
 };
 
